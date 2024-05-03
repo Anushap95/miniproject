@@ -1,0 +1,87 @@
+{% load static %}
+ <img src="{% static "images/hi.jpg" %}" alt="Hi!" />
+<div class="row">
+  <div class="col">
+    <img src="static/food/templates/static/images/images.avif/Artboard1.png" alt="">
+    <h2>{{ currentUser.username }}</h2>
+  </div>
+
+  <a href="{% url 'logout' %}">Logout</a>
+{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie place</title> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="food.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+
+<body>
+<h1>Foodie Corner</h1>
+<h1>Ultimate Burger Corner</h1>
+<h4>small pizas</h6>
+
+    <nav>
+    <ul>
+        <a href="#">Home</li></a>
+        <a href="#">Order</li></a>
+        <a href="#">Near</li></a>
+        <a href="#">About</li></a>
+    </ul>
+</nav>
+<section class="items">
+    <div class="item">
+        <img src="food/templates/static/images/coffe.jpg">
+        <h4>Pizza</h4>
+        <button>Order</button>
+    </div>
+    <div class="item">
+        <img src="piz.jpg">
+        <h4>Pizza Veg</h4>
+        <button>Order</button>
+    </div>
+    <div class="item">
+        <img src="burger.jpeg">
+        <h4>Burger</h4>
+        <button>Order</button>
+    </div>
+    <div class="item">
+        <img src="vegbur.webp">
+        <h4>Burger Veg</h4>
+        <button>Order</button>
+    </div>
+    <div class="item">
+        <img src="psa.webp">
+        <h4>Pasta</h4>
+        <button>Order</button>
+    </div>
+    <div class="item">
+        <img src="pasta.jpeg">
+        <h4>Pasta Veg</h4>
+        <button>Order</button>
+    </div>
+    <div class="item">
+        <img src="cofe.webp">
+        <h4>Coffe</h4>
+        <button>Order</button>
+    </div>
+    <div class="item">
+        <img src="juice1.jpg">
+        <h4>juice</h4>
+        <button>Order</button>
+    </div>
+    <div class="item">
+        <img src="shake.jpg">
+        <h4>Shake</h4>
+        <button>Order</button>
+    </div>    
+</section>
+<footer class="footer bg-dark text-white text-center">
+    <div class="container">
+      <span class="text-muted">&copy; 2024 Your Website</span>
+    </div>
+  </footer>
+</body>
+</html>

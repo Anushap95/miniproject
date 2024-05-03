@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 50px 0;
+    }
+    
+    footer h4 {
+        color: #fff;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    footer ul li {
+        margin-bottom: 10px;
+    }
+    
+    .social-icons {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .social-icons li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .social-icons li a {
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    .social-icons li a:hover {
+        color: #ffcc00;
+    }
+  </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- Add your CSS links or styles here -->
+</head>
+<body>
+    <div class="contact-info">
+        <h2>Ourinfo@Foodapp.com</p>
+        <p>Contact Information</h2>
+        <p>Email: phone: +9178905215142</p>
+        <p>Address: Gandhinagar,Idappally,India</p>
+    </div>
+    <div class="contact-form">
+        <h2>Send us a Message</h2>
+        <form action="#" method="post">
+        {% csrf_token %}
+            <!-- Add your form fields here -->
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><strong>Address:</strong> Gandhinagar, kochi,India</li>
+                            <li><strong>Email:</strong> info@foodapp.com</li>
+                            <li><strong>Phone:</strong>9178905215142 </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Follow Us</h4>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </footer>
+</body>
+</html>
